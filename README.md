@@ -29,7 +29,7 @@ Cały proces dzieli się na dwa etapy:
    * Baza **Qdrant** błyskawicznie znajduje fragmenty dokumentów o najbardziej zbliżonym znaczeniu.
    * Znalezione fragmenty wraz z pytaniem trafiają do modelu **Google Gemini**, który układa zwięzłą, precyzyjną odpowiedź, powołując się na znalezione źródła.
 
-## Architektura i Stack Technologiczny
+### Architektura i Stack Technologiczny
 
 * **Backend API**: [FastAPI](https://fastapi.tiangolo.com/) + [Uvicorn](https://www.uvicorn.org/)
 * **Walidacja danych**: [Pydantic v2](https://docs.pydantic.dev/) + `pydantic-settings`
@@ -39,7 +39,7 @@ Cały proces dzieli się na dwa etapy:
 
 ---
 
-##  Przepływ danych (Data Flow)
+###  Przepływ danych (Data Flow)
 
 1. **Ingestia (`POST /rag/ingest`)**:
    * Tekst trafia do chunkera dzielącego treść na semantyczne fragmenty.
@@ -54,7 +54,7 @@ Cały proces dzieli się na dwa etapy:
 
    ---
 
-## Lokalne uruchomienie
+### Lokalne uruchomienie
 
 1. **Sklonuj repozytorium i przejdź do katalogu projektu**:
    ```bash
