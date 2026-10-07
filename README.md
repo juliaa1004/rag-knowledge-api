@@ -4,7 +4,7 @@ Inteligentna wyszukiwarka i asystent wiedzy oparty na architekturze **RAG** (Ret
 
 ---
 
-## 💡 Czym jest ten projekt, jaki ma cel i jak działa?
+### Czym jest ten projekt, jaki ma cel i jak działa?
 
 ### 1. Czym to jest?
 To gotowy serwis backendowy (API), który łączy bazę wiedzy Twojej firmy lub projektu z modelem sztucznej inteligencji. Pozwala zadawać pytania we własnym języku i otrzymywać precyzyjne odpowiedzi oparte wyłącznie na dostarczonych dokumentach.
@@ -62,15 +62,14 @@ Cały proces dzieli się na dwa etapy:
    cd rag-knowledge-api
 
 2. **Skonfiguruj środowisko wirtualne**:
-   python3 -m venv .venv
+   ```python3 -m venv .venv
    source .venv/bin/activate
    pip install -r requirements.txt
 
 3. **Uzupełnij zmienne środowiskowe:**:
-   cp .env.example .env
-   # Wklej swój klucz GEMINI_API_KEY w pliku .env
+   ```cp .env.example .env
 
 4. **Uruchom serwer**:
-   uvicorn src.main:app --reload --port 8000
+   ```uvicorn src.main:app --reload --port 8000
 
    
