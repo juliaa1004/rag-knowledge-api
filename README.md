@@ -67,9 +67,9 @@ Cały proces dzieli się na dwa etapy:
    pip install -r requirements.txt
 
 3. **Uzupełnij zmienne środowiskowe:**:
-   ```cp .env.example .env
+   cp .env.example .env
 
 4. **Uruchom serwer**:
-   ```uvicorn src.main:app --reload --port 8000
+   uvicorn src.main:app --reload --port 8000
 
    
